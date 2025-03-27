@@ -2,50 +2,102 @@
 {
   "depends_on": [],
   "author": "Stephan Bökelmann",
-  "first_used": "2025-03-17",
-  "keywords": ["learning", "exercises", "education", "practice"]
+  "first_used": "2025-03-27",
+  "keywords": ["mathematics", "cartesian product", "function", "mapping", "tuples"]
 }
 --->
 
-# Learning Through Exercises
+# Cartesian Products and Functions of Multiple Inputs
 
 ## 1) Introduction
-Learning by doing is one of the most effective methods to acquire new knowledge and skills. Rather than passively consuming information, actively engaging in problem-solving fosters deeper understanding and long-term retention. By working through structured exercises, students can grasp complex concepts in a more intuitive and applicable way. This approach is particularly beneficial in technical fields like programming, mathematics, and engineering.
+In the previous sheet, we explored the concept of a function as a mapping from one set (the domain) to another set (the codomain). But what if we want to model situations where a function depends on **two** inputs? In that case, we turn to the idea of the **Cartesian product**.
+
+> **Definition:**  
+> The **Cartesian product** of two sets A and B, written as A × B, is the set of **all ordered pairs** (a, b) where a is in A and b is in B.
+
+For example:
+```
+A = {1, 2}
+B = {x, y}
+A × B = { (1, x), (1, y), (2, x), (2, y) }
+```
+
+Each element of the Cartesian product is a **tuple** — a pair of elements where the **order matters**.
+
+---
+
+### 1.0.1) Visualising the Cartesian Product
+We can draw the Cartesian product as a grid or matrix:
+
+```
+       x     y
+    +-----+-----+
+ 1  |1, x|1, y|
+    +-----+-----+
+ 2  |2, x|2, y|
+    +-----+-----+
+```
+
+Each cell in the table represents a pair (a, b) in A × B.
+
+This is the domain for functions with **two inputs**.
+
+---
+
+### 1.0.2) Functions with Two Inputs
+A function of two variables can now be defined as:
+
+```
+f: A × B → C
+```
+
+Example: Let A = {1, 2}, B = {10, 20}, and define:
+```
+f(a, b) = a + b
+```
+
+Then the function maps:
+- f(1, 10) = 11
+- f(1, 20) = 21
+- f(2, 10) = 12
+- f(2, 20) = 22
+
+Each pair in A × B is mapped to a unique value in C.
+
+---
 
 ### 1.1) Further Readings and Other Sources
-- [The Importance of Practice in Learning](https://www.sciencedirect.com/science/article/pii/S036013151300062X)
-- "The Art of Learning" by Josh Waitzkin
-- [How to Learn Effectively: 5 Key Strategies](https://www.edutopia.org/article/5-research-backed-learning-strategies)
+
+- Spivak. *Calculus* – Chapter on functions of several variables.
+- S. Mac Lane. *Categories for the Working Mathematician* (for advanced readers)
+- [Cartesian Products explained visually (YouTube)](https://www.youtube.com/watch?v=9Q6XopAU3Ig)
+- [Interactive Tuple Pairing Tool (Visualgo)](https://visualgo.net/en/heap) *(used creatively to visualize pairings)*
+
 
 ## 2) Tasks
-1. **Write a Summary**: Summarize the concept of "learning by doing" in 3-5 sentences.
-2. **Example Identification**: List three examples from your own experience where learning through exercises helped you understand a topic better.
-3. **Create an Exercise**: Design a simple exercise for a topic of your choice that someone else could use to practice.
-4. **Follow an Exercise**: Find an online tutorial that includes exercises and complete at least two of them.
-5. **Modify an Existing Exercise**: Take a basic problem from a textbook or online course and modify it to make it slightly more challenging.
-6. **Pair Learning**: Explain a concept to a partner and guide them through an exercise without giving direct answers.
-7. **Review Mistakes**: Look at an exercise you've previously completed incorrectly. Identify why the mistake happened and how to prevent it in the future.
-8. **Time Challenge**: Set a timer for 10 minutes and try to solve as many simple exercises as possible on a given topic.
-9. **Self-Assessment**: Create a checklist to evaluate your own performance in completing exercises effectively.
-10. **Reflect on Progress**: Write a short paragraph on how this structured approach to exercises has influenced your learning.
 
-<details>
-  <summary>Tip for Task 5</summary>
-  Try making small adjustments first, such as increasing the difficulty slightly or adding an extra constraint.
-</details>
+1. **Enumerate the Cartesian Product**:  
+Let A = {a, b, c}, B = {1, 2}. Write out all elements of A × B.
+
+2. **Grid Drawing**:  
+Draw the Cartesian product A × B from task 1 as a table or grid, with A along the vertical axis and B along the horizontal axis.
+
+3. **Define a Function on a Cartesian Product**:  
+Let A = {0, 1}, B = {0, 1}, and define a function f: A × B → N by:
+```
+f(a, b) = a * 2 + b
+```
+List the output of all possible pairs.
 
 ## 3) Questions
-1. What are the main benefits of learning through exercises compared to passive learning?
-2. How do exercises improve long-term retention?
-3. Can you think of a subject where learning through exercises might be less effective? Why?
-4. What role does feedback play in learning through exercises?
-5. How can self-designed exercises improve understanding?
-6. Why is it beneficial to review past mistakes in exercises?
-7. How does explaining a concept to someone else reinforce your own understanding?
-8. What strategies can you use to stay motivated when practicing with exercises?
-9. How can timed challenges contribute to learning efficiency?
-10. How do exercises help bridge the gap between theory and practical application?
+1. Why is the **order** of elements in a tuple important in the Cartesian product?
+2. Can you think of real-world examples where data naturally forms **pairs**?
+3. What changes if you consider B × A instead of A × B?
+4. How would you describe a function of three inputs using Cartesian products?
+5. Take a look at task 3 once again: What kind of values do you get? Do these resemble anything familiar from binary numbers?
 
-## 4) Advice
-Practice consistently and seek out diverse exercises that challenge different aspects of a topic. Combine exercises with reflection and feedback to maximize your learning efficiency. Don't hesitate to adapt exercises to fit your own needs and ensure that you're actively engaging with the material, rather than just going through the motions.
+---
+
+## 4) Final Advice
+Cartesian products allow us to model more complex input structures. Once you understand how sets of pairs work, many programming and mathematical ideas become more intuitive: 2D arrays, coordinate systems, nested loops, and even database joins rely on this concept. When working with such functions, keep track of your domains, and always pay attention to the order in your tuples!
 

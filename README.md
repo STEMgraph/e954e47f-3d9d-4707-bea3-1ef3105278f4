@@ -33,9 +33,9 @@ We can draw the Cartesian product as a grid or matrix:
 ```
        x     y
     +-----+-----+
- 1  |1, x|1, y|
+ 1  |1, x |1, y |
     +-----+-----+
- 2  |2, x|2, y|
+ 2  |2, x |2, y |
     +-----+-----+
 ```
 

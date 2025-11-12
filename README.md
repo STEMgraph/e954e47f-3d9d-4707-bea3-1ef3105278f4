@@ -1,6 +1,7 @@
 <!---
 {
   "id": "e954e47f-3d9d-4707-bea3-1ef3105278f4",
+  "teaches": "Cartesian Products and Functions of Multiple Inputs",
   "depends_on": [],
   "author": "Stephan Bökelmann",
   "first_used": "2025-03-27",
